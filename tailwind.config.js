@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       height: {
         half: '50vh',
+        header: 'calc(100vh - 76px)',
       },
     },
   },

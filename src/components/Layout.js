@@ -1,16 +1,14 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Main from './Main';
-
 const Layout = ({ children, title }) => {
   return (
     <div className='flex flex-col h-screen justify-between'>
       <Header />
-      <Main>
+      <main className='w-full header-space md:mt-18 h-screen'>
         <title>{title}</title>
         {children}
-      </Main>
+      </main>
       {/* <Footer /> */}
     </div>
   );
