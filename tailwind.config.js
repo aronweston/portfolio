@@ -23,6 +23,7 @@ module.exports = {
         half: '50vh',
         header: 'calc(100vh - 76px)',
         200: '200px',
+        25: '25px',
       },
     },
   },
@@ -32,5 +33,6 @@ module.exports = {
   plugins: [
     require('gatsby-plugin-postcss'),
     require('@tailwindcss/aspect-ratio'),
+    require('@tailwindcss/forms'),
   ],
 };

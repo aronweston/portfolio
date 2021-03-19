@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Layout from '../components/Layout';
 import VerticalProjects from '../components/VerticalProjects';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import {
   JSLogo,
   NodeLogo,
@@ -22,11 +23,13 @@ import {
   EmailLogo,
   GithubIcon,
   LinkedInIcon,
+  CheckCircle,
 } from '../components/Styles';
 
+import { Link } from 'gatsby';
 import ProfileImage from '../assets/profile_image_1.jpg';
 import Button from '../components/Button';
-import { Link } from 'gatsby';
+import Resume from '../assets/Aron Weston - Resume.pdf';
 
 const Icons = () => {
   return (
@@ -40,6 +43,8 @@ const Icons = () => {
 };
 
 const Index = () => {
+  const [value] = useState('aron@aronweston.com');
+  const [copied, setCopied] = useState(false);
   return (
     <Layout title='Aron Weston / Junior Software Engineer / Sydney, NSW'>
       <section className='text-center bg-yellow-200 h-half flex justify-center items-center content-center'>
@@ -89,8 +94,24 @@ const Index = () => {
                     current stack, gain mentorship and work within diverse teams
                     to achieve the same accomplishments at a larger scale.
                   </p>
-                  <div>
-                    <Link to=''>
+                  <div className='inline-flex gap-2'>
+                    <CopyToClipboard
+                      text={value}
+                      onCopy={() => setCopied(true)}>
+                      <button
+                        className={`${
+                          copied ? 'bg-green-500' : 'bg-gray-900'
+                        } hover:bg-gray-400 text-white font-bold py-2 px-4 rounded inline-flex items-center`}>
+                        {copied ? (
+                          <CheckCircle />
+                        ) : (
+                          <EmailLogo className='w-4 h-4 mr-2' />
+                        )}
+                        <span>{copied ? 'Copied to clipboard' : 'Email'}</span>
+                      </button>
+                    </CopyToClipboard>
+
+                    <a download href={Resume} target='_blank'>
                       <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center'>
                         <svg
                           className='fill-current w-4 h-4 mr-2'
@@ -100,12 +121,24 @@ const Index = () => {
                         </svg>
                         <span>Resume</span>
                       </button>
-                    </Link>
+                    </a>
 
-                    <Link to=''>
+                    <Link to='#projects'>
                       <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center'>
-                        <EmailLogo className='fill-current w-4 h-4 mr-2' />
-                        <span>Email</span>
+                        <svg
+                          xmlns='http://www.w3.org/2000/svg'
+                          fill='none'
+                          viewBox='0 0 24 24'
+                          className='w-4 h-4 mr-2'
+                          stroke='currentColor'>
+                          <path
+                            stroke-linecap='round'
+                            stroke-linejoin='round'
+                            stroke-width='2'
+                            d='M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4'
+                          />
+                        </svg>
+                        <span>Projects</span>
                       </button>
                     </Link>
                   </div>
@@ -115,7 +148,7 @@ const Index = () => {
           </div>
         </section>
 
-        <section className='mt-20'>
+        <section id='about' className='mt-20'>
           <div className='aspect-w-16 aspect-h-9'>
             <iframe
               src='https://www.youtube.com/embed/r9jwGansp1E'
@@ -144,7 +177,10 @@ const Index = () => {
           <TailwindIcon width='40px' fill='#fff' />
         </section>
 
-        <section className='my-20'>
+        <section id='projects' className='my-20'>
+          <span className='text-4xl block pb-5 font-bold text-left'>
+            Projects & Work History
+          </span>
           <VerticalProjects />
         </section>
       </main>
