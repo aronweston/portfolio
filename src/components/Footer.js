@@ -28,13 +28,19 @@ const Footer = () => {
               placeholder='Company or organisation'
             />
           </label>
+          <label class='block' htmlFor='email'>
+            <input
+              type='email'
+              name='email'
+              class='mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
+              placeholder='Email'
+            />
+          </label>
           <label className='block' htmlFor='message'>
             <textarea
               name='message'
               className='mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
-              rows='3'>
-              {message}
-            </textarea>
+              rows='3'></textarea>
           </label>
           <div data-netlify-recaptcha='true'></div>
           <Button>Send!</Button>
