@@ -1,6 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: "portfolio",
+    title: 'Aron Weston | Junior Software Engineer | Sydney, NSW',
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require('tailwindcss')],
+      },
+    },
+  ],
 };

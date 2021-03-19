@@ -3,10 +3,10 @@ import React from 'react';
 
 const Button = ({ to, children }) => {
   return (
-    <Link to={to}>
-      <button class='inline-flex items-center mt-4 px-3 py-2 text-black bg-white rounded font-bold text-md'>
-        {children}
-      </button>
+    <Link
+      to={to}
+      className='bg-gray-900 hover:bg-gray-800 text-white icon py-2 px-4 rounded'>
+      <button className='inline-block'>{children}</button>
     </Link>
   );
 };
