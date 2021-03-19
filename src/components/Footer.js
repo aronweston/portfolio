@@ -18,12 +18,13 @@ const Footer = () => {
       <form
         action='POST'
         data-netlify='true'
-        // onSubmit={handleSubmit}
+        name='portfolio form'
         className='m-5 container w-1/2 mx-auto'>
+        <input type='hidden' name='portfolio-form' value='portfolio form' />
         <div className='grid grid-cols-1 gap-6'>
           <label htmlFor='name' class='block'>
             <input
-              onChange={(e) => setName(e.target.value)}
+              // onChange={(e) => setName(e.target.value)}
               type='text'
               name='name'
               class='mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
@@ -33,7 +34,7 @@ const Footer = () => {
           <label class='block' htmlFor='company'>
             <input
               type='text'
-              onChange={(e) => setCompany(e.target.value)}
+              // onChange={(e) => setCompany(e.target.value)}
               name='company'
               class='mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
               placeholder='Company or organisation'
@@ -42,12 +43,13 @@ const Footer = () => {
           <label className='block' htmlFor='message'>
             <textarea
               name='message'
-              onChange={(e) => setMessage(e.target.value)}
+              // onChange={(e) => setMessage(e.target.value)}
               className='mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
-              rows='3'>
-              {message}
-            </textarea>
+              rows='3'></textarea>
           </label>
+          <div class='block'>
+            <div data-netlify-recaptcha='true'></div>
+          </div>
           <Button>Send!</Button>
         </div>
       </form>
