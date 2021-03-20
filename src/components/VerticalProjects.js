@@ -16,6 +16,7 @@ import {
   PhpIcon,
   PostGresLogo,
   RailsLogo,
+  jQueryIcon,
   ReactLogo,
   ReduxIcon,
   RubyLogo,
@@ -46,7 +47,7 @@ const VerticalProjects = () => {
           stack={[
             <ReactLogo width='35px' />,
             <ExpressIcon width='35px' />,
-            <MongoLogo width='35px' fill='#000' />,
+            <MongoLogo width='35px' fill='#c4c4c4' />,
             <NodeLogo width='35px' fill='#000' />,
             <ReduxIcon width='35px' />,
             <TailwindIcon width='35px' fill='#000' />,
@@ -218,9 +219,10 @@ const VerticalProjects = () => {
             <JSLogo width='35px' />,
             <HtmlLogo width='35px' />,
             <CSSLogo width='35px' />,
+            <jQueryIcon width='35px' />,
           ]}
-          github='https://doctormaria.com.au'
-          link='https://github.com/aronweston/'
+          github='https://github.com/aronweston/doctormaria'
+          link='https://doctormaria.com.au'
           image={DRMImage}
           date='July 2020'>
           <p>
@@ -246,8 +248,8 @@ const VerticalProjects = () => {
             <HtmlLogo width='35px' />,
             <CSSLogo width='35px' />,
           ]}
-          github='https://acboperations.com.au'
-          link='https://github.com/aronweston/'
+          github='https://github.com/aronweston/acboperations'
+          link='https://acboperations.com.au'
           image={ACBImage}
           date='March 2020'>
           <p>

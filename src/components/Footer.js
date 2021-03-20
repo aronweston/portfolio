@@ -45,8 +45,10 @@ const Footer = () => {
               rows='3'></textarea>
           </label>
           <div data-netlify-recaptcha='true'></div>
-          <Button>Send!</Button>
         </div>
+        <button class='bg-gray-900 hover:bg-gray-800 text-white focus:outline-none font-bold py-2 px-4 rounded text-center items-center w-full'>
+          Send!
+        </button>
       </form>
       <div className='mx-auto text-xs text-center'>© 2021, Aron Weston.</div>
     </footer>

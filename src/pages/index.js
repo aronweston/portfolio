@@ -97,8 +97,10 @@ const Index = () => {
                       onCopy={() => setCopied(true)}>
                       <button
                         className={`${
-                          copied ? 'bg-green-500' : 'bg-gray-900'
-                        } hover:bg-gray-400 text-white font-bold py-2 px-4 rounded inline-flex items-center`}>
+                          copied
+                            ? 'bg-green-500  hover:bg-green-500'
+                            : 'bg-gray-900'
+                        } hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none inline-flex items-center `}>
                         {copied ? (
                           <CheckCircle />
                         ) : (
@@ -109,7 +111,7 @@ const Index = () => {
                     </CopyToClipboard>
 
                     <a href={Resume} target='_blank'>
-                      <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center'>
+                      <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 focus:outline-none font-bold py-2 px-4 rounded inline-flex items-center'>
                         <svg
                           className='fill-current w-4 h-4 mr-2'
                           xmlns='http://www.w3.org/2000/svg'
@@ -120,8 +122,8 @@ const Index = () => {
                       </button>
                     </a>
 
-                    <Link to='#projects'>
-                      <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center'>
+                    <Link className='outline-white' to='#projects'>
+                      <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 focus:outline-none font-bold py-2 px-4 rounded inline-flex items-center'>
                         <svg
                           xmlns='http://www.w3.org/2000/svg'
                           fill='none'
