@@ -57,10 +57,10 @@ export const ProjectContainer = ({
             <GaLogo />
           ) : null}{' '}
           {occupation} • {date} •{' '}
-          <Link className='align-middle icon' to={github}>
+          <Link className='align-middle icon' to={link} target='_blank'>
             <LinkIcon width='20px' />
           </Link>
-          <Link className='align-middle icon' to={github}>
+          <Link target='_blank' className='align-middle icon' to={github}>
             <GithubIcon width='20px' />
           </Link>
         </p>

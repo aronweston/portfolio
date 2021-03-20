@@ -21,14 +21,11 @@ import {
   PhpIcon,
   ExpressIcon,
   EmailLogo,
-  GithubIcon,
-  LinkedInIcon,
   CheckCircle,
+  ReduxIcon,
 } from '../components/Styles';
-
 import { Link } from 'gatsby';
 import ProfileImage from '../assets/profile_image_1.jpg';
-import Button from '../components/Button';
 import Resume from '../assets/Aron Weston - Resume.pdf';
 
 const Icons = () => {
@@ -111,7 +108,7 @@ const Index = () => {
                       </button>
                     </CopyToClipboard>
 
-                    <a download href={Resume} target='_blank'>
+                    <a href={Resume} target='_blank'>
                       <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center'>
                         <svg
                           className='fill-current w-4 h-4 mr-2'
@@ -157,7 +154,7 @@ const Index = () => {
               allowfullscreen></iframe>
           </div>
         </section>
-        <section className='w-full inline-flex gap-auto justify-between p-5 text-white bg-gray-900'>
+        <section className='w-full inline-flex gap-2 justify-between p-5 text-white bg-gray-900'>
           <ReactLogo width='40px' fill='#fff' />
           <JSLogo width='40px' fill='#fff' />
           <VueLogo width='40px' fill='#fff' />
@@ -172,12 +169,13 @@ const Index = () => {
           <WordpressLogo width='40px' fill='#fff' />
           <MongoLogo width='40px' fill='#fff' />
           <PostGresLogo width='40px' fill='#fff' />
+          <ReduxIcon width='40px' fill='#fff' />
           <GitLogo width='40px' fill='#fff' />
           <BootstrapIcon width='40px' fill='#fff' />
           <TailwindIcon width='40px' fill='#fff' />
         </section>
 
-        <section id='projects' className='my-20'>
+        <section id='projects' className='my-20 mx-2'>
           <span className='text-4xl block pb-5 font-bold text-left'>
             Projects & Work History
           </span>

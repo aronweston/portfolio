@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Button from './Button';
 
 const Footer = () => {
   return (
     <footer className='py-6 w-full bg-yellow-200 text-gray-900 text-center p-5'>
+      <span className='text-4xl block font-bold'>Let's chat!</span>
       <form
         method='POST'
         data-netlify='true'
@@ -40,6 +41,7 @@ const Footer = () => {
             <textarea
               name='message'
               className='mt-1 block w-full rounded-md bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0'
+              placeholder='How can I help?'
               rows='3'></textarea>
           </label>
           <div data-netlify-recaptcha='true'></div>

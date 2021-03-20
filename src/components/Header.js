@@ -40,17 +40,20 @@ const Header = () => {
           </CopyToClipboard>
           <Link
             className='inline-flex items-center py-1 px-1 my-3 icon'
-            to='https://github.com/aronweston'>
+            target='_blank'
+            to='https://twitter.com/arnowesto'>
             <TwitterLogo />
           </Link>
           <Link
             className='inline-flex items-center py-1 px-1 my-3 icon'
+            target='_blank'
             to='https://github.com/aronweston'>
             <GithubIcon />
           </Link>
           <Link
             className='inline-flex items-center py-1 px-1 my-3 icon'
-            to='https://github.com/aronweston'>
+            target='_blank'
+            to='https://www.linkedin.com/in/aronweston/'>
             <LinkedInIcon />
           </Link>
         </nav>
