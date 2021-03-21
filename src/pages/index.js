@@ -150,7 +150,7 @@ const Index = () => {
         <section id='about' className='mt-20'>
           <div className='aspect-w-16 aspect-h-9'>
             <iframe
-              src='https://www.youtube.com/embed/r9jwGansp1E'
+              src='https://www.youtube.com/watch?v=tv-BGicpIbc'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
               allowfullscreen></iframe>
