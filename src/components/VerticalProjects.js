@@ -162,7 +162,7 @@ const VerticalProjects = () => {
           <p>
             Sometimes the simplest and funnest things can be the hardest to do!
             This is a simple Tic Tac Toe game with the ability to choose their
-            emoji icon and replay the game when someone wins and looses. The
+            emoji icon and replay the game when someone wins and loses. The
             challenges of this project were ensuring the tie, win and loss
             conditions all action in the appropriate sequence. Best parts of
             this project was seeing the object orientated approach come to life
