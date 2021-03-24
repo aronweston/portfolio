@@ -11,6 +11,14 @@ module.exports = {
         postCssPlugins: [require('tailwindcss')],
       },
     },
+    {
+      resolve: `gatsby-plugin-hotjar`,
+      options: {
+        includeInDevelopment: false,
+        id: process.env.HOTJAR_ID,
+        sv: process.env.SNIPPET_VERSION,
+      },
+    },
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {

@@ -1,3 +1,12 @@
 node_modules/
 .cache/
 public
+*.DS_Store
+src/.DS_Store
+
+.env.development
+.env.production
+.env.typekit
+.nvmrc
+.prettierrc
+.vscode/
