@@ -1,15 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import {
-  GaLogo,
-  PersonalLogo,
-  FreelanceLogo,
-  LinkedInIcon,
-  GithubIcon,
-} from './Styles';
+import { GaLogo, PersonalLogo, FreelanceLogo, GithubIcon } from './Styles';
 import placeholder from '../assets/placeholder.png';
 import '../styles/timeline.css';
-import Button from './Button';
 
 function LinkIcon({ width, fill = '#000' }) {
   return (
@@ -44,7 +37,7 @@ export const ProjectContainer = ({
       <img
         className='w-full rounded object-fill'
         src={image || placeholder}
-        alt={`${title} website image`}
+        alt={title}
       />
       <div class='px-6 py-4'>
         <p class='font-bold text-2xl'>{title}</p>

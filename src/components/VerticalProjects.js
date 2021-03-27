@@ -91,6 +91,7 @@ const VerticalProjects = () => {
             project within a team. Shout outs to{' '}
             <Link
               target='_blank'
+              rel='noreferrer'
               className='underline'
               to='https://github.com/oisa'>
               Jim
@@ -98,6 +99,7 @@ const VerticalProjects = () => {
             ,{' '}
             <Link
               target='_blank'
+              rel='noreferrer'
               className='underline'
               to='https://github.com/zohaf'>
               Zoha
@@ -105,6 +107,7 @@ const VerticalProjects = () => {
             ,{' '}
             <Link
               target='_blank'
+              rel='noreferrer'
               className='underline'
               to='https://github.com/AndreAnggono'>
               Andre.
@@ -259,12 +262,14 @@ const VerticalProjects = () => {
             <Link
               className='underline'
               target='_blank'
+              rel='noreferrer'
               to='https://flickity.metafizzy.co/'>
               Metafizzy's Flickity jQuery plugin
             </Link>{' '}
             and{' '}
             <a
               target='_blank'
+              rel='noreferrer'
               className='underline'
               href='https://github.com/space10-community/conversational-form'>
               Space 10's Conversational form

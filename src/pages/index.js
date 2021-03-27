@@ -26,7 +26,7 @@ import {
 } from '../components/Styles';
 import { Link } from 'gatsby';
 import ProfileImage from '../assets/profile_image_1.jpg';
-import Resume from '../assets/Aron Weston - Resume.pdf';
+import ResumePdf from '../assets/Aron Weston - CV.pdf';
 
 const Icons = () => {
   return (
@@ -60,7 +60,7 @@ const Index = () => {
               <img
                 className='rounded-lg shadow-lg w-full'
                 src={ProfileImage}
-                alt='Aron Weston profile image'
+                alt='Aron Weston with a beige shirt and a green background with his arms folded and smiling.'
               />
             </div>
             <div className='md:w-2/3 lg:w-2/3 w-full px-3 flex flex-row flex-wrap'>
@@ -110,7 +110,7 @@ const Index = () => {
                       </button>
                     </CopyToClipboard>
 
-                    <a href={Resume} target='_blank'>
+                    <a href={ResumePdf} target='_blank' rel='noreferrer'>
                       <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 focus:outline-none font-bold py-2 px-4 rounded inline-flex items-center'>
                         <svg
                           className='fill-current w-4 h-4 mr-2'
@@ -150,6 +150,7 @@ const Index = () => {
         <section id='about' className='mt-20'>
           <div className='aspect-w-16 aspect-h-9'>
             <iframe
+              title="Aron Weston's Youtube intro video"
               src='https://www.youtube.com/embed/tv-BGicpIbc'
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

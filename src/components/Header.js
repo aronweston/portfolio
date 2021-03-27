@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import {
-  AboutMeIcon,
   EmailLogo,
   GithubIcon,
   LinkedInIcon,
   Logo,
-  ProjectsIcon,
   TwitterLogo,
 } from './Styles';
 import { Link } from 'gatsby';
@@ -31,12 +29,12 @@ const Header = () => {
 
         <nav>
           <CopyToClipboard text={value} onCopy={() => setCopied(true)}>
-            <a
+            <button
               className={`inline-flex items-center ${
                 copied ? 'p-2 my-2 h-25' : 'py-1 px-1 my-3'
               }`}>
               {copied ? 'Copied' : <EmailLogo />}
-            </a>
+            </button>
           </CopyToClipboard>
           <Link
             className='inline-flex items-center py-1 px-1 my-3 icon'
