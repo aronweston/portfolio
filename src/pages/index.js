@@ -26,7 +26,7 @@ import {
 } from '../components/Styles';
 import { Link } from 'gatsby';
 import ProfileImage from '../assets/profile_image_1.jpg';
-import ResumePdf from '../assets/Aron Weston - CV.pdf';
+import resume from '../assets/Aron Weston - CV.pdf';
 
 const Icons = () => {
   return (
@@ -110,7 +110,7 @@ const Index = () => {
                       </button>
                     </CopyToClipboard>
 
-                    <a href={ResumePdf} target='_blank' rel='noreferrer'>
+                    <a href={resume} target='_blank' rel='noreferrer'>
                       <button class='bg-gray-300 hover:bg-gray-400 text-gray-800 focus:outline-none font-bold py-2 px-4 rounded inline-flex items-center'>
                         <svg
                           className='fill-current w-4 h-4 mr-2'
